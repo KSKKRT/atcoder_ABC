@@ -11,7 +11,6 @@ for _ in range(T):
     d = 3 * reviews - stars
     p = min(p, d * P[3])
     if d % 2 == 0:
-        p = min(p, P[3] + ((d - 1) // 2 + 1) * P[4])
         p = min(p, d // 2 * P[4])
     else:
         p = min(p, P[3] + ((d - 1) // 2) * P[4])
